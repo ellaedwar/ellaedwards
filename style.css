@@ -7,16 +7,22 @@ body {
 }
 
 header {
-  background-image: "img/Rosie McGuinness — Illustration division.jpeg";
+  background-image: url(img/heart.png);
   color: #fff;
-  padding: 1em;
+  margin: 0;
   text-align: center;
 }
 
 nav {
   display: flex;
-  justify-content: center;
-  margin-top: 1em;
+  justify-content: space-between;
+  width: auto;
+  height: 60px;
+  background-image: url(img/nav.png);
+}
+
+#logo-container img {
+  height: 100%;
 }
 
 nav a {
@@ -41,11 +47,51 @@ h2 {
   color: #333;
 }
 
-.the-giving-tree-on-cornelia-st-parent{
+.the-giving-tree-on-cornelia-st-parent {
   padding: 2em;
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.articles{
-  padding: 2em;
-  display: block;
+
+.slideshow-container {
+  max-width: 70%;
+}
+
+.side-image {
+  max-width: 40%; 
+}
+
+.side-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .the-giving-tree-on-cornelia-st-parent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .side-image {
+    max-width: 70%; 
+    margin-top: 20px; 
+  }
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  color: #7f9780;
+}
+
+.prev:hover, .next:hover {
+  background-color: #ddd;
 }
