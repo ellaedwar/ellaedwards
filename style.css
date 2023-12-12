@@ -67,6 +67,8 @@ h2 {
   height: auto;
 }
 
+
+
 @media only screen and (max-width: 600px) {
   .the-giving-tree-on-cornelia-st-parent {
     flex-direction: column;
